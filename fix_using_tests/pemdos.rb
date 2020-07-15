@@ -1,8 +1,13 @@
-# don't forget to add: require 'pry'
+require 'pry'
 
 def snake_it_up(string)
+  add_s = 0
   if string[0] == "s"
-    10 * "s" + string
+  until add_s == 10
+    string = "s" + string
+    add_s += 1
+  end
+  return string
   else
     string
   end
